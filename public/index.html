@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Elegant UPR</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main>
+      <div class="spinner is-hidden js-spinner"></div>
+      <form class="drop js-drop">
+        <input class="js-upload" name="file" type="file" accept=".spold">
+      </form>
+      <div class="modal is-hidden js-modal">
+        <div class="js-activity"></div>
+        <button class="js-reset" type="button">Cancel</button>
+        <button class="js-draw" type="button">Next</button>
+      </div>
+      <div class="chart is-hidden js-chart">
+        <ul class="from-technosphere js-from-technosphere"></ul>
+        <div class="center">
+          <ul class="to-environment js-to-environment"></ul>
+          <div class="activity">
+            <span class="js-activity"></span>
+            <button class="js-reset" type="button">Reset</button>
+          </div>
+          <ul class="from-environment js-from-environment"></ul>
+        </div>
+        <ul class="to-technosphere js-to-technosphere"></ul>
+      </div>
+    </main>
+    <script src="bundle.js"></script>
+  </body>
+</html>

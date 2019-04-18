@@ -1,0 +1,128 @@
+body {
+  align-items: center;
+  display: flex;
+
+  /* https://github.com */
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+
+  height: 100vh;
+  justify-content: center;
+  margin: 0;
+}
+
+.modal {
+  text-align: center;
+}
+
+.chart {
+  align-items: stretch;
+  display: flex;
+}
+
+.chart .from-technosphere,
+.chart .to-technosphere {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.chart .from-technosphere {
+  margin-right: 2em;
+  margin-left: 1em;
+}
+
+.chart .to-technosphere {
+  margin-right: 1em;
+  margin-left: 2em;
+}
+
+.chart .from-technosphere li,
+.chart .to-technosphere li {
+  margin-bottom: 1em;
+}
+
+.chart .from-technosphere li:last-child,
+.chart .to-technosphere li:last-child {
+  margin-bottom: 0;
+}
+
+.chart .center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.chart .to-technosphere .reference-product {
+  font-weight: bold;
+}
+
+.chart .to-environment,
+.chart .from-environment {
+  display: flex;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.chart .to-environment {
+  margin-bottom: 4em;
+}
+
+.chart .from-environment {
+  margin-top: 4em;
+}
+
+.chart .to-environment li,
+.chart .from-environment li {
+  margin-right: 1em;
+}
+
+.chart .to-environment li:last-child,
+.chart .from-environment li:last-child {
+  margin-right: 0;
+}
+
+.activity {
+  background-color: black;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+.is-hidden {
+  display: none;
+}
+
+/* https://tobiasahlin.com/spinkit/ */
+.spinner {
+  background-color: black;
+  height: 40px;
+  width: 40px;
+
+  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+  0% { -webkit-transform: perspective(120px) }
+  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes sk-rotateplane {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+  } 50% {
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+  } 100% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}

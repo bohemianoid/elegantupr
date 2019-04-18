@@ -1,0 +1,29 @@
+{
+  "name": "elegantupr",
+  "version": "0.1.0",
+  "description": "Elegant Visualisation of ecoinvent Unit Processes",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "browserify src/app.js -o public/bundle.js",
+    "watch": "watchify src/app.js -o public/bundle.js"
+  },
+  "repository": "simonroth/elegantupr",
+  "keywords": [
+    "visualisation",
+    "ecoinvent",
+    "unit",
+    "process"
+  ],
+  "author": "Simon Roth <contact@simonroth.ch> (https://simonroth.ch)",
+  "license": "Unlicense",
+  "dependencies": {
+    "express": "^4.16.4",
+    "form-data": "^2.3.3",
+    "ky": "^0.9.1"
+  },
+  "devDependencies": {
+    "browserify": "^16.2.3",
+    "watchify": "^3.11.1"
+  }
+}
