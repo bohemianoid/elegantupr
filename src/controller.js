@@ -36,7 +36,11 @@ module.exports = class Controller {
     // call API to parse ecospold2 file and wait for activity object
     (async () => {
       const response = await ky.post(
-        'https://elegantupr-api.herokuapp.com/parser', {body: form}
+        'https://elegantupr-api.herokuapp.com/parser',
+        {
+          body: form,
+          timeout: 30000
+        }
       );
       const activity = await response.json();
 
@@ -61,7 +65,11 @@ module.exports = class Controller {
     this.model.getActivity((activity) => {
       (async () => {
         const response = await ky.post(
-          'https://elegantupr-api.herokuapp.com/filter', {json: activity}
+          'https://elegantupr-api.herokuapp.com/filter',
+          {
+            json: activity,
+            timeout: 30000
+          }
         );
         const filteredActivity = await response.json();
 
