@@ -6,6 +6,7 @@ Elegant Visualisation of ecoinvent Unit Processes
 $ git clone https://github.com/simonroth/elegantupr.git
 $ cd elegantupr
 $ npm install
+$ npm run build
 $ npm start
 ```
 
